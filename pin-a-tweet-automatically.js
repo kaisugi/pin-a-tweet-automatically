@@ -9,7 +9,7 @@ const TWEETID = process.env.TWEETID;
 
 async function pin(tweetId) {
   const browser = await puppeteer.launch({
-    headless: false  // for debugging, set true
+    headless: true  // for debugging, set false
   });
 
   // login
